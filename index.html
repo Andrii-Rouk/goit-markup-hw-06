@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WebStudio</title>
+  <link rel="icon" href="./images/meditation.jpg" type="image/png">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
     integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
@@ -22,12 +23,12 @@
 </head>
 
 <body>
-  <!-- ========= Ш а п к а     / логотип та контакти / =========== -->
+  <!-- ========= Ш а п к а     / H E A D E R / =========== -->
 
   <header class="page-header">
-    <div class="container heder-container">
+    <div class="container header-container">
       <nav class="header-nav">
-        <a class="logo header-logo" href="./index.html">Web<span class="logo-part">Studio</span></a>
+        <a class="header-logo logo" href="./index.html">Web<span class="black">Studio</span></a>
 
         <ul class="nav-list">
           <li class="nav-item"><a class="nav-link current" href="./index.html">Studio</a></li>
@@ -35,6 +36,13 @@
           <li class="nav-item"><a class="nav-link" href="">Contacts</a></li>
         </ul>
       </nav>
+
+      <button class="mobile-menu-button" type="button">
+        <svg class="mobil-menu-icon" width="24px" height="24px">
+          <use href="./images/icons.svg#mobil_menu"></use>
+        </svg>
+      </button>
+
 
       <address class="kontakts">
         <ul class="contacts-list">
@@ -50,7 +58,7 @@
   </header>
   <main>
     <section class="business">
-      <div class="container">
+      <div class="container hero-container">
         <h1 class="business-text">Effective Solutions for Your Business</h1>
         <button class="button" type="button">Order Service</button>
       </div>
@@ -58,7 +66,7 @@
 
     <!-- =============== Секція 2 з специфіка ведення бізнесу ===============-->
 
-    <section class="specifik">
+    <!-- <section class="specifik">
       <div class="container container-spectxt">
         <h2 class="visually-hidden">Advantages</h2>
         <ul class="spec-line">
@@ -192,11 +200,11 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
 
     <!-- ============= Секція 3 з фото / Our Team /=============  -->
 
-    <section class="komand">
+    <!-- <section class="komand">
       <div class="container komand-container">
         <h2 class="komand-list">Our Team</h2>
         <ul class="foto-blok">
@@ -204,8 +212,6 @@
             <div class="txt-blok">
               <h3 class="name">Mark Guerrero</h3>
               <p class="profes">Product Designer</p>
-              <!-- </div>
-            <div class="soc-blok"> -->
               <ul class="icon-list">
                 <li class="icon-item">
                   <a href="" class="icon-link">
@@ -243,8 +249,8 @@
             <div class="txt-blok">
               <h3 class="name">Tom Ford</h3>
               <p class="profes">Frontend Developer</p>
-              <!-- </div>
-            <div class="soc-blok"> -->
+              </div>
+            <div class="soc-blok">
               <ul class="icon-list">
                 <li class="icon-item">
                   <a href="" class="icon-link">
@@ -282,8 +288,8 @@
             <div class="txt-blok">
               <h3 class="name">Camila Garcia</h3>
               <p class="profes">Marketing</p>
-              <!-- </div>
-            <div class="soc-blok"> -->
+              </div>
+            <div class="soc-blok">
               <ul class="icon-list">
                 <li class="icon-item">
                   <a href="" class="icon-link">
@@ -321,8 +327,8 @@
             <div class="txt-blok">
               <h3 class="name">Daniel Wilson</h3>
               <p class="profes">UI Designer</p>
-              <!-- </div>
-            <div class="soc-blok"> -->
+              </div>
+            <div class="soc-blok">
               <ul class="icon-list">
                 <li class="icon-item">
                   <a href="" class="icon-link">
@@ -357,11 +363,11 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
 
     <!-- ================ Секція-4 "Our Portfolio" ================== -->
 
-    <section class="portfolio">
+    <!-- <section class="portfolio">
       <div class="container our-container">
         <h2 class="port-list">Our Portfolio</h2>
         <ul class="prodtehservis">
@@ -442,14 +448,14 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
 
   </main>
   <!--  ==================== FOOTER ==================== -->
-  <footer class="pages-footer">
+  <!-- <footer class="pages-footer">
     <div class="container futer-container">
       <div class="footer-list">
-        <a class="logo footer-logo" href="./index.html">Web<span class="logo-part">Studio</span></a>
+        <a class="logo" href="./index.html">Web<span class="white">Studio</span></a>
         <p class="text-footer">Increase the flow of customers and sales for your business with digital marketing &
           growth solutions.</p>
       </div>
@@ -492,87 +498,84 @@
         <p class="sub-txt">Subscribe</p>
         <form class="email-form">
           <label class="fut-lab" for="futer-email">
-            <input class="email-blok" type="email" id="futer-email" name="futer-email" placeholder="E-mail"/>
+            <input class="email-blok" type="email" id="futer-email" name="futer-email" placeholder="E-mail" />
           </label>
-            <button type="submit" class="btn">Subscribe<svg class="soc-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-btm"></use>
-              </svg>
-            </button>
+          <button type="submit" class="btn">Subscribe<svg class="soc-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-btm"></use>
+            </svg>
+          </button>
 
-          </form>
-         </div>
-        </div>
-   </footer>
-
-
-
-
-
-
-     <div class="backdrop is-open">
-       <div class="modal">
-
-          <button type="button" class="modal-button" data-modal-close>
-    <svg class="icon-close-link" width="8" height="8">
-      <use href="./images/icons.svg#icon-close"></use>
-    </svg></button>
-       <p class="modal-txt">Leave your contacts and we will call you back</p>
-
-  <form class="modal-form">
-    <div class="form-label">
-     <label class="modal-label" for="user-name">Name</label>
-      <div class="form-input">
-         <input type="text" class="modal-input" name="user-name" id="user-name" required minlength="3"/>
-         <svg class="user-icon" width="18" height="24">
-          <use href="./images/icons.svg#icon-person"></use>
-          </svg>
-        </div>
+        </form>
+      </div>
     </div>
+  </footer> -->
 
-     <div class="form-label">
-     <label class="modal-label" for="user-fone">Phone</label>
-        <div class="form-input">
-         <input type="tel" class="modal-input" name="user-fone" id="user-fone" required minlength="10"/>
-        <svg class="user-icon" width="18" height="24">
-          <use href="./images/icons.svg#icon-phone"></use>
-        </svg>
+
+  <!-- <div class="backdrop is-open">
+    <div class="modal">
+
+      <button type="button" class="modal-button" data-modal-close>
+        <svg class="icon-close-link" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg></button>
+      <p class="modal-txt">Leave your contacts and we will call you back</p>
+
+      <form class="modal-form">
+        <div class="form-label">
+          <label class="modal-label" for="user-name">Name</label>
+          <div class="form-input">
+            <input type="text" class="modal-input" name="user-name" id="user-name" required minlength="3" />
+            <svg class="user-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </div>
         </div>
-     </div>
 
-   <div class="form-label">
-     <label class="modal-label" for="user-mail">Email</label>
-         <div class="form-input">
-         <input type="email" class="modal-input" name="user-mail" id="user-mail"/>
-        <svg class="user-icon" width="18" height="24">
-          <use href="./images/icons.svg#icon-email"></use>
-        </svg>
-         </div>
-  </div>
+        <div class="form-label">
+          <label class="modal-label" for="user-fone">Phone</label>
+          <div class="form-input">
+            <input type="tel" class="modal-input" name="user-fone" id="user-fone" required minlength="10" />
+            <svg class="user-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+        </div>
 
-            <div class="form-label-com">
-              <label class="modal-label" for="user-comment">Comment</label>
-              <textarea class="textarea-comment" name="user-comment" id="user-comment" placeholder="Text input"></textarea>
-            </div>
+        <div class="form-label">
+          <label class="modal-label" for="user-mail">Email</label>
+          <div class="form-input">
+            <input type="email" class="modal-input" name="user-mail" id="user-mail" />
+            <svg class="user-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </div>
+        </div>
 
-              <div class="modal-chek">
-              <input class="modal-hidden visually-hidden" type="checkbox" name="user-privacy" id="user-privacy" value="true" required/>
-                <label class="chek-lab-txt" for="user-privacy">
-                      <span class="chek-lab-span">
-                     <svg class="modal-icon" width="10" height="8">
-                       <use href="./images/icons.svg#icon-vector"></use>
-                     </svg>
-                    </span>
-                    I accept the terms and conditions of the
-                    <a class="href-policy" href="#">Privacy Policy</a>
-                  </label>
-              </div>
+        <div class="form-label-com">
+          <label class="modal-label" for="user-comment">Comment</label>
+          <textarea class="textarea-comment" name="user-comment" id="user-comment" placeholder="Text input"></textarea>
+        </div>
 
-              <button class="modal-but-fut" type="submit">Send</button>
-            </form>
-            </div>
-           </div>
+        <div class="modal-chek">
+          <input class="modal-hidden visually-hidden" type="checkbox" name="user-privacy" id="user-privacy" value="true"
+            required />
+          <label class="chek-lab-txt" for="user-privacy">
+            <span class="chek-lab-span">
+              <svg class="modal-icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-vector"></use>
+              </svg>
+            </span>
+            I accept the terms and conditions of the
+            <a class="href-policy" href="#">Privacy Policy</a>
+          </label>
+        </div>
+
+        <button class="modal-but-fut" type="submit">Send</button>
+      </form>
+    </div>
+  </div> -->
 
 
-              </body>
+</body>
 
-              </html>
+</html>
