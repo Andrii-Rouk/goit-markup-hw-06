@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #434455;
   background-color: #fff;
 }
@@ -37,6 +37,19 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* ----- HEDER ------ */
 
 .container {
@@ -61,8 +74,11 @@ a {
 }
 
 .page-header {
-    border-bottom: 1px solid #E7E9FC;
-      box-shadow: 0 1px 6px 0 #2e2f4214, 0 1px 1px 0 #2e2f4229, 0 2px 1px 0 #2e2f4214;
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow:
+    0 1px 6px 0 #2e2f4214,
+    0 1px 1px 0 #2e2f4229,
+    0 2px 1px 0 #2e2f4214;
 }
 
 .header-container {
@@ -98,7 +114,6 @@ a {
   .header-nav {
     gap: 76px;
   }
-
 }
 
 .nav-item {
@@ -107,7 +122,7 @@ a {
 }
 
 .logo {
-  color: #4D5AE5;
+  color: #4d5ae5;
   font-family: Raleway;
   font-size: 18px;
   font-weight: 700;
@@ -119,7 +134,7 @@ a {
 }
 
 .black {
-  color: #2E2F42;
+  color: #2e2f42;
 }
 
 @media screen and (max-width: 768px) {
@@ -136,9 +151,8 @@ a {
   cursor: pointer;
   stroke: #111;
   line-height: 0;
-  color: #2F2F37;
+  color: #2f2f37;
   z-index: 999;
-
 }
 
 @media screen and (min-width: 768px) {
@@ -164,7 +178,7 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-size: 16px;
-  color: #2E2F42;
+  color: #2e2f42;
   padding-top: 24px;
   padding-bottom: 24px;
   cursor: pointer;
@@ -181,16 +195,16 @@ a {
 }
 
 .nav-link.current::after {
-    position: absolute;
-      content: "";
-      display: block;
-      width: 100%;
-      height: 4px;
-      border-radius: 2px;
-      background-color: #404BBF;
-      left: 0;
-      bottom: -1px;
-    }
+  position: absolute;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #404bbf;
+  left: 0;
+  bottom: -1px;
+}
 
 .nav-list,
 .kontakts {
@@ -202,8 +216,8 @@ a {
   .kontakts {
     display: flex;
     font-style: normal;
-     }
-    }
+  }
+}
 
 .contacts-list {
   display: flex;
@@ -222,21 +236,20 @@ a {
 
 .contacts-link {
   display: block;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 4%;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 4%;
   color: #434455;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 .contacts-link:hover,
 .contacts-link:focus {
   color: #404bbf;
 }
 
-   /* H E R O */
+/* H E R O */
 
 .hero-container {
   flex-direction: column;
@@ -262,9 +275,9 @@ a {
 .business {
   background-color: #2e2f42;
 
-  background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)),
-    url("../images/mobihero_bg-x.jpg");
+  background-image:
+    linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url('../images/mobihero_bg-x.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -272,21 +285,21 @@ a {
   margin: 0 auto;
   padding-top: 72px;
   padding-bottom: 72px;
-
 }
 
 @media screen and (min-resolution: 192dpi) {
   .business {
-  background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)),
-      url("../images/mobihero_bg-2x.jpg");  }
+    background-image:
+      linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url('../images/mobihero_bg-2x.jpg');
+  }
 }
 
 @media screen and (min-width: 768px) {
   .business {
-    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)),
-    url("../images/tablhero_bg-x.jpg");
+    background-image:
+      linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url('../images/tablhero_bg-x.jpg');
     max-width: 768px;
     padding-top: 112px;
     padding-bottom: 112px;
@@ -295,17 +308,17 @@ a {
 
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .business {
-    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)),
-      url("../images/tablhero_bg-2x.jpg");
+    background-image:
+      linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url('../images/tablhero_bg-2x.jpg');
   }
 }
 
 @media screen and (min-width: 1158px) {
   .business {
-    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)),
-    url("../images/desk_office-x.jpg");
+    background-image:
+      linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url('../images/desk_office-x.jpg');
     max-width: 1440px;
     padding-top: 188px;
     padding-bottom: 188px;
@@ -314,9 +327,9 @@ a {
 
 @media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
   .business {
-    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)),
-      url("../images/desk_office-2x.jpg");
+    background-image:
+      linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url('../images/desk_office-2x.jpg');
   }
 }
 
@@ -325,30 +338,28 @@ a {
   margin-bottom: 72px;
   margin-left: 52px;
   margin-right: 52px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 40px;
-    letter-spacing: 2%;
-    text-align: center;
-      color: #fff;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 2%;
+  text-align: center;
+  color: #fff;
 }
 
 @media screen and (min-width: 768px) {
   .business-text {
     max-width: 496px;
-      font-size: 56px;
-      line-height: 60px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 36px;
+    font-size: 56px;
+    line-height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 36px;
   }
 }
 
 @media screen and (min-width: 1158px) {
   .business-text {
     margin-bottom: 48px;
-      font-size: 48px;
-      line-height: 52px;
   }
 }
 
@@ -359,8 +370,8 @@ a {
   display: block;
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    margin-left: auto;
-      margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #4d5ae5;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -378,3 +389,125 @@ a {
   color: #fff;
 }
 
+/* S T R A T E G I  */
+
+@media screen and (min-width: 768px) {
+  .container-spectxt {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container-spectxt {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+}
+
+.specifik {
+  display: block;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+@media screen and (min-width: 1158px) {
+  .specifik {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+.spec-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  background: #f4f4fd;
+  width: 264px;
+  height: 112px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+@media screen and (max-width: 1158px) {
+  .spec-icons {
+    display: none;
+  }
+}
+
+.spec-line {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+@media screen and (min-width: 768px) {
+  .spec-line {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .spec-line {
+    gap: 24px;
+  }
+}
+
+.featur {
+  display: flex;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+  justify-content: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .featur {
+    justify-content: start;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .featur {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.advan {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #434455;
+  justify-content: start;
+}
+
+@media screen and (min-width: 1158px) {
+  .advan {
+    font-weight: 400;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .spec-txt {
+    min-width: 356px;
+    flex: 1 0 calc((100% - 3 * 24px) / 4);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .spec-txt {
+    min-width: 264px;
+  }
+}
