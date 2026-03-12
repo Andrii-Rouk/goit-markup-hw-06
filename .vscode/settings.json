@@ -36,7 +36,7 @@
   "html.validate.styles": true,
 
   // 🖼️ Live Server (автоматичне оновлення сторінки)
-  "liveServer.settings.port": 5501,
+  "liveServer.settings.port": 5502,
   "liveServer.settings.wait": 500,
 
   // 🖊️ Дужки та кольори
