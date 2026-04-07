@@ -67,15 +67,6 @@ input {
   padding: 0 16px;
 }
 
-/* @media screen and (min-width: 768px) {
-  .futer-container {
-    max-width: 496px;
-    padding-left: 0;
-    padding-right: 0;
-
-  }
-} */
-
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
@@ -146,11 +137,6 @@ input {
   color: #2e2f42;
 }
 
-/* @media screen and (max-width: 767px) {
-  .logo {
-    padding: 0;
-  }
-} */
 
 .mobile-menu-button {
   display: block;
@@ -592,7 +578,6 @@ input {
 
 .profes {
   font-weight: 400;
-  /* font-style: Regular; */
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 2%;
@@ -999,5 +984,28 @@ input {
   .email-blok {
     max-width: 264px;
   }
+}
 
+@media screen and (min-width: 1158px) {
+  .futer-container {
+    max-width: 1158px;
+    padding: 0 15px;
+    flex-wrap: nowrap;
+  }
+
+  .pages-footer {
+    padding: 100px 0px;
+  }
+
+  .footer-list {
+    margin-right: 120px;
+  }
+
+  .soc-footer {
+    margin-right: 80px;
+  }
+
+  .mail-footer {
+    margin-right: 0;
+  }
 }
