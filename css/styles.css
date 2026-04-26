@@ -520,8 +520,8 @@ input {
 .komand-container {
   display: block;
   text-align: center;
-  max-width: 296px;
-  padding: 0 16px;
+  max-width: 264px;
+  padding: 0;
 }
 
 .komand-list {
