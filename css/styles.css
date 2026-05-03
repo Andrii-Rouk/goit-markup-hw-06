@@ -520,8 +520,8 @@ input {
 .komand-container {
   display: block;
   text-align: center;
-  max-width: 296px;
-  padding: 0 16px;
+  max-width: 264px;
+  padding: 0;
 }
 
 .komand-list {
@@ -566,7 +566,6 @@ input {
 
 .name {
   font-weight: 500;
-  /* font-style: Medium; */
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 2%;
@@ -1009,3 +1008,135 @@ input {
     margin-right: 0;
   }
 }
+
+   /* ========  M O B I L E  M E N U ========= */
+
+     .mobile-container {
+       display: flex;
+       position: relative;
+       padding-top: 72px;
+       flex-direction: column;
+       justify-content: space-between;
+       padding-right: 24px;
+       padding-bottom: 40px;
+       height: 100%;
+     }
+
+     .mobile-menu {
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background-color: #fff;
+       z-index: 999;
+       overflow: scroll;
+       transform: translateX(100%);
+       opacity: 0;
+       visibility: hidden;
+       pointer-events: none;
+       transition: transform 250ms ease-in, opacity 250ms ease-in, visibility 0s linear 250ms;
+     }
+
+     .mobile-menu.is-open {
+       transform: translateX(0);
+       visibility: visible;
+       pointer-events: auto;
+       opacity: 1;
+       transition: transform 250ms ease-in, opacity 250ms ease-in;
+     }
+
+     .mobile-icon {
+       display: flex;
+       fill: #2e2f42;
+       padding: 0;
+       line-height: 0;
+     }
+
+     .mobile-btn {
+       position: absolute;
+       top: 24px;
+       right: 24px;
+       border: 1px solid #e7e9fc;
+       border-radius: 100%;
+       background-color: #e7e9fc;
+       width: 24px;
+       height: 24px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       z-index: 999;
+     }
+
+     .mobile-item {
+       display: flex;
+       flex-direction: column;
+       gap: 40px;
+       width: 151px;
+       height: 200px;
+       margin-right: 129px;
+     }
+
+     .mobile-item-link {
+       display: block;
+       font-weight: 700;
+       font-size: 36px;
+       line-height: 111%;
+       letter-spacing: 0.02em;
+       color: #2e2f42;
+     }
+
+     .mobile-kontakts {
+       width: 193px;
+       margin-right: 87px;
+       margin-bottom: 48px;
+     }
+
+     .mobile-contacts-item {
+       display: flex;
+       flex-direction: column;
+       gap: 24px;
+     }
+
+     .mobile-contacts-link {
+       display: block;
+       font-weight: 500;
+       font-size: 20px;
+       line-height: 120%;
+       letter-spacing: 0.02em;
+       color: #434455;
+     }
+
+     .mobile-blue {
+       color: #404bbf;
+     }
+
+     .soc-list {
+       display: flex;
+       justify-content: space-between;
+       width: 100%;
+     }
+
+     .soc-item {
+       background-color: #4d5ae5;
+       border-radius: 50%;
+       width: 40px;
+       height: 40px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     }
+
+     .soc-item:hover,
+     soc-item:focus {
+       background-color: #404bbf;
+     }
+
+     @media screen and (min-width: 768px) {
+       .mobile-menu {
+         display: none;
+       }
+     }
+
+     /* =========   ========== */
