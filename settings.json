@@ -1,0 +1,33 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "css.sortOnSave": false,
+  "CSSSorting.config": {
+    "properties-order": [
+      "display",
+      "position",
+      "top",
+      "right",
+      "bottom",
+      "left",
+      "width",
+      "height",
+      "margin",
+      "padding",
+      "border",
+      "background",
+      "color",
+      "font",
+      "font-size",
+      "font-weight",
+      "line-height",
+      "text-align",
+      "box-shadow",
+      "opacity",
+      "transition",
+      "transform"
+    ],
+    "unspecified-properties-position": "bottom",
+    "ignore": ["**/node_modules/**", "**/dist/**"]
+  }
+}

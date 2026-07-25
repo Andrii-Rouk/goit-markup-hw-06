@@ -1,0 +1,94 @@
+.team {
+  background-color: #f4f4fd;
+  padding: 120px 0;
+}
+
+.team-container {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+.team-name {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  text-align: center;
+}
+.team-title {
+  display: flex;
+  gap: 24px;
+}
+
+.team-list {
+  display: flex;
+  flex-direction: column;
+  width: calc((100% - 72px) / 4);
+  background-color: #fff;
+  border-radius: 0 0 4px 4px;
+  box-shadow:
+    0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 2px 1px 0 rgba(46, 47, 66, 0.08);
+  min-width: 264px;
+}
+
+.team-resume {
+  display: flex;
+  padding: 32px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 0 0 4px 4px;
+  flex-shrink: 0;
+}
+
+.team-resume-name {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+  text-align: center;
+}
+
+.team-resume-profession {
+  color: #434455;
+  text-align: center;
+}
+
+.team-img {
+  width: 264px;
+  height: 260px;
+}
+
+.cocial {
+  display: flex;
+  width: 100%;
+  gap: 24px;
+}
+.cocial-list {
+}
+.cocial-link {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cocial-link:hover,
+.cocial-link:focus {
+  background-color: #404bbf;
+}
+
+.cocial-icon {
+  flex-shrink: 0;
+  fill: #f4f4fd;
+}
