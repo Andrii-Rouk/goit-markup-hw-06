@@ -20,8 +20,6 @@
   <link rel="stylesheet" href="./css/main.css">
 
   <title>My homework 4</title>
-  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
 </head>
 
@@ -54,13 +52,18 @@
           </li>
         </ul>
       </address>
+      <button class="mobile-menu-button" type="button" aria-label="Open mobile menu">
+        <svg class="mobil-menu-icon" width="24px" height="24px">
+          <use href="./images/icons.svg#mobil_menu"></use>
+        </svg>
+      </button>
     </div>
   </header>
   <main>
 
     <!-- section H E R O -->
 
-    <section class="hero" id="hero">
+    <section class="hero sr-only" id="hero">
       <div class="container hero-container">
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
         <button type="button" class="hero-btn">Order Service</button>
@@ -69,7 +72,7 @@
 
     <!-- section FEATURES -->
 
-    <section class="features" id="features">
+    <section class="features sr-only" id="features">
       <div class="container features-container">
         <h2 class="features-name sr-only">Our Features</h2>
         <ul class="features-title">
@@ -124,7 +127,7 @@
 
     <!-- section T E A M -->
 
-    <section class="team" id="team">
+    <section class="team sr-only" id="team">
       <div class="container team-container">
         <h2 class="team-name">Our Team</h2>
         <ul class="team-title">
@@ -283,7 +286,7 @@
 
     <!-- section P O R T F O L I O -->
 
-    <section class="portfolio" id="portfolio">
+    <section class="portfolio sr-only" id="portfolio">
       <div class="container portfolio-container">
         <h2 class="portfolio-name">Our Portfolio</h2>
         <ul class="portfolio-title">
@@ -365,9 +368,10 @@
 
   </main>
 
+
   <!-- section F O O T E R -->
 
-  <footer class="footer" id="footer">
+  <footer class="footer sr-only" id="footer">
     <div class="container footer-container">
       <div class="logo-block">
         <a class="logo footer-logo-link" href="./index.html">Web<span class="footer-logo">Studio</span></a>
@@ -422,9 +426,73 @@
     </div>
   </footer>
 
-  <!-- modal windov -->
+  <!-- MOBILE MENU -->
 
-  <div class="backdrop is-open" id="modal">
+  <div class="mobile-menu is-open">
+
+    <button class="close-btn" type="button" aria-label="Close mobile menu">
+      <svg class="btn-svg" width="8" height="8">
+        <use href="./images/icons.svg#close"></use>
+      </svg>
+    </button>
+
+    <nav class="mobil-nav">
+      <ul class="mobile-item">
+        <li class="mibile-list">
+          <a class="mobile-item-link mobile-blue" href="#">Studio</a>
+        </li>
+        <li class="mibile-list"><a class="mobile-item-link" href="#">Portfolio</a></li>
+        <li class="mibile-list"><a class="mobile-item-link" href="#">Contacts</a></li>
+      </ul>
+    </nav>
+    <div class="footer-mobil">
+      <address class="mobile-kontakts">
+        <ul class="mobile-contacts-item">
+          <li class="mobile-contacts-list">
+            <a class="mobile-contacts-link link-blue" href="tel:+110001111111">+11
+              (000) 111-11-11</a>
+          </li>
+          <li class="mobile-contacts-list">
+            <a class="mobile-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+      </address>
+      <ul class="soc-item">
+        <li class="soc-list">
+          <a class="soc-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg class="soc-icon" width="24" height="24">
+              <use href="./images/icons.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="soc-list">
+          <a class="soc-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <svg class="soc-icon" width="24" height="24">
+              <use href="./images/icons.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="soc-list">
+          <a class="soc-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg class="soc-icon" width="24" height="24">
+              <use href="./images/icons.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="soc-list">
+          <a class="soc-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg class="soc-icon" width="24" height="24">
+              <use href="./images/icons.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- MODAL WINDOW -->
+
+  <div class="backdrop sr-only /is-open" id="modal">
     <div class="modal">
       <button class="close-btn" type="button" aria-label="Close modal" title="Close">
         <svg class="close-btn-svg" width="8" height="8">
