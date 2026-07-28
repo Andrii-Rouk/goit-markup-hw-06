@@ -14,13 +14,6 @@
     opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* @media only screen and (min-width: 768px) {
-   .backdrop
-   {
-    display: none;
-  }
-} */
-
 .backdrop.is-open {
   opacity: 1;
   visibility: visible;
@@ -51,6 +44,13 @@
     0 1px 1px 0 rgba(0, 0, 0, 0.14);
 }
 
+@media only screen and (min-width: 768px) {
+  .modal {
+    max-width: 408px;
+    min-height: 584px;
+    padding: 72px 24px 24px;
+  }
+}
 .backdrop.is-open .modal {
   opacity: 1;
   transform: translate(-50%, -50%);
@@ -133,8 +133,6 @@
 .modal-input:focus + .modal-input-svg {
   fill: #4d5ae5;
 }
-
-/* border: 1px solid #4D5AE5; */
 
 .modal-input {
   width: 100%;
