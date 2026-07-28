@@ -5,6 +5,7 @@
   width: 100dvw;
   height: 100dvh;
   background-color: rgba(46, 47, 66, 0.4);
+  z-index: 1000;
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
@@ -12,6 +13,13 @@
     visibility 300ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* @media only screen and (min-width: 768px) {
+   .backdrop
+   {
+    display: none;
+  }
+} */
 
 .backdrop.is-open {
   opacity: 1;
