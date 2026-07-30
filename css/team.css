@@ -1,85 +1,119 @@
+/* ==================== TEAM SECTION ==================== */
 .team {
   background-color: #f4f4fd;
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
-.team-container {
-  display: flex;
-  flex-direction: column;
-  gap: 72px;
+@media screen and (min-width: 1158px) {
+  .team {
+    padding: 120px 0;
+  }
 }
 
+/* ==================== TEAM TITLE (H2) ==================== */
 .team-name {
+  margin-bottom: 72px;
+  color: #2e2f42;
+  text-align: center;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
-  letter-spacing: 0.72px;
-  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
+
+/* ==================== TEAM LIST (UL) ==================== */
 .team-title {
   display: flex;
-  gap: 24px;
-}
-
-.team-list {
-  display: flex;
   flex-direction: column;
-  width: calc((100% - 72px) / 4);
-  background-color: #fff;
-  border-radius: 0 0 4px 4px;
-  box-shadow:
-    0 1px 6px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16),
-    0 2px 1px 0 rgba(46, 47, 66, 0.08);
-  min-width: 264px;
-}
-
-.team-resume {
-  display: flex;
-  padding: 32px 16px;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 8px;
-  align-self: stretch;
-  border-radius: 0 0 4px 4px;
-  flex-shrink: 0;
+  gap: 72px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-title {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 64px 24px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .team-title {
+    gap: 24px;
+  }
+}
+
+/* ==================== TEAM CARD (LI) ==================== */
+.team-list {
+  width: 264px;
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow:
+    0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+/* ==================== TEAM IMAGE ==================== */
+.team-img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ==================== TEAM CARD CONTENT (RESUME) ==================== */
+.team-resume {
+  padding: 32px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .team-resume-name {
+  margin-bottom: 8px;
+  color: #2e2f42;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.02em;
   text-align: center;
 }
 
 .team-resume-profession {
+  margin-bottom: 8px;
   color: #434455;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   text-align: center;
 }
 
-.team-img {
-  width: 264px;
-  height: 260px;
-}
-
+/* ==================== SOCIAL ICONS ==================== */
 .cocial {
   display: flex;
-  width: 100%;
-  gap: 24px;
-}
-.cocial-list {
-}
-.cocial-link {
-  display: flex;
-  width: 40px;
-  height: 40px;
-  padding: 12px;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
+  gap: 24px;
+}
+
+.cocial-list {
+  width: 40px;
+  height: 40px;
+}
+
+.cocial-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   background-color: #4d5ae5;
+  border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -89,6 +123,5 @@
 }
 
 .cocial-icon {
-  flex-shrink: 0;
   fill: #f4f4fd;
 }
