@@ -1,138 +1,159 @@
+/* ==================== MOBILE MENU ==================== */
 .mobile-menu {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
   z-index: 999;
-  padding: 72px 16px 40px;
+
+  /* Стан за замовчуванням (сховано) */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
   transform: translateX(100%);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition:
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
   transform: translateX(0);
 }
 
-.close-btn {
-  position: absolute;
-  right: 24px;
-  top: 24px;
+/* Внутрішній контейнер сторінки */
+.mobile-menu-container {
+  position: relative;
   display: flex;
-  width: 24px;
-  height: 24px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  background-color: #e7e9fc;
-  transition:
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding-top: 72px;
+  padding-bottom: 40px;
 }
 
-.close-btn:hover,
-.close-btn:focus,
-.close-btn:active {
+/* Кнопка закриття хрестик */
+.mobile-menu .close-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid rgba(46, 47, 66, 0.1);
+  background-color: #e7e9fc;
+  padding: 0;
+  cursor: pointer;
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu .close-btn:hover,
+.mobile-menu .close-btn:focus {
   background-color: #404bbf;
   border: none;
 }
 
-.btn-svg {
-  flex-shrink: 0;
+.mobile-menu .btn-svg {
   fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-btn:hover .btn-svg,
-.close-btn:focus .btn-svg,
-.close-btn:active .btn-svg {
-  fill: #fff;
+.mobile-menu .close-btn:hover .btn-svg,
+.mobile-menu .close-btn:focus .btn-svg {
+  fill: #ffffff;
 }
 
+/* Навігаційні посилання */
 .mobil-nav {
-  margin-right: auto;
   margin-bottom: auto;
 }
+
 .mobile-item {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 40px;
+  max-width: 151px;
+}
+
+.mobile-kontakts {
+  font-style: normal;
+  width: 193px;
 }
 
 .mobile-item-link {
-  color: #2e2f42;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-  letter-spacing: 0.72px;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-item-link:hover,
 .mobile-item-link:focus,
-.mobile-item-link:active {
+.mobile-blue {
   color: #404bbf;
 }
 
-.mobile-blue {
-  color: #404bbf;
+/* Нижній блок: контакти + соцмережі */
+.footer-mobil {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
 }
 
 .mobile-contacts-item {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 24px;
 }
 
 .mobile-contacts-link {
-  font-size: 20px;
-  font-weight: 500;
+  display: inline-block;
   font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.4px;
-  color: #2e2f42;
+  letter-spacing: 0.02em;
+  color: #434455;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-contacts-link:hover,
-.mobile-contacts-link:focus {
+.mobile-contacts-link:focus,
+.mobile-contacts-link.link-blue {
   color: #4d5ae5;
 }
 
-.link-blue {
-  color: #4d5ae5;
-}
-
-.footer-mobil {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 48px;
-  align-self: stretch;
-}
-
+/* Соцмережі */
 .soc-item {
   display: flex;
-  align-items: flex-start;
   gap: 40px;
-  align-self: stretch;
+}
+
+.soc-list {
+  width: 40px;
+  height: 40px;
 }
 
 .soc-link {
   display: flex;
-  width: 40px;
-  height: 40px;
   justify-content: center;
   align-items: center;
-  border-radius: 20px;
-  background: #4d5ae5;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #4d5ae5;
   color: #f4f4fd;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -143,11 +164,11 @@
 }
 
 .soc-icon {
-  flex-shrink: 0;
   fill: currentColor;
 }
 
-@media only screen and (min-width: 768px) {
+/* Приховування мобільного меню на більших екранах */
+@media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
   }

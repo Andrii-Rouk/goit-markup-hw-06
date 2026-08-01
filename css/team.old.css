@@ -1,18 +1,16 @@
 /* ==================== TEAM SECTION ==================== */
 .team {
-  padding-top: 96px;
-  padding-bottom: 96px;
   background-color: #f4f4fd;
+  padding: 96px 0;
 }
 
 @media screen and (min-width: 1158px) {
   .team {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding: 120px 0;
   }
 }
 
-/* ==================== TITLE (H2) ==================== */
+/* ==================== TEAM TITLE (H2) ==================== */
 .team-name {
   margin-bottom: 72px;
   color: #2e2f42;
@@ -32,18 +30,15 @@
   gap: 72px;
 }
 
-/* Tablet (768px+) */
 @media screen and (min-width: 768px) {
   .team-title {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    column-gap: 24px;
-    row-gap: 64px;
+    gap: 64px 24px;
   }
 }
 
-/* Desktop (1158px+) */
 @media screen and (min-width: 1158px) {
   .team-title {
     gap: 24px;
@@ -61,22 +56,21 @@
     0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-/* Desktop (1158px+) — точний розрахунок для 4 карток у ряд */
-@media screen and (min-width: 1158px) {
-  .team-list {
-    width: calc((100% - 72px) / 4);
-  }
-}
-
+/* ==================== TEAM IMAGE ==================== */
 .team-img {
+  display: block;
   width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
-/* ==================== CARD RESUME / TEXT ==================== */
+/* ==================== TEAM CARD CONTENT (RESUME) ==================== */
 .team-resume {
-  padding: 32px 0;
-  text-align: center;
+  padding: 32px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .team-resume-name {
@@ -86,20 +80,24 @@
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .team-resume-profession {
   margin-bottom: 8px;
   color: #434455;
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
-/* ==================== SOCIAL LINKS ==================== */
+/* ==================== SOCIAL ICONS ==================== */
 .cocial {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 24px;
 }
 
