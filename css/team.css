@@ -61,7 +61,6 @@
     0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-/* Desktop (1158px+) — точний розрахунок для 4 карток у ряд */
 @media screen and (min-width: 1158px) {
   .team-list {
     width: calc((100% - 72px) / 4);

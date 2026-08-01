@@ -44,7 +44,7 @@
 /* Desktop (1158px+) */
 @media screen and (min-width: 1158px) {
   .footer-container {
-    max-width: 1158px; /* Скасовуємо обмеження в 552px */
+    max-width: 1158px; 
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
